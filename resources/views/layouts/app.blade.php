@@ -12,7 +12,10 @@
 </head>
 
 <body>
-    <div><a href={{ route('articles.index') }}>Статьи</a></div>
+    <div>
+        <a href={{ route('articles.index') }}>Статьи</a>
+        <a href={{ route('articles.create') }}>Создать новую статью</a>
+    </div>
     <div class="container mt-4">
         <h1>@yield('header')</h1>
         <div>
