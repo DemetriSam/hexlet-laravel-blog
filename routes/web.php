@@ -15,9 +15,8 @@ use App\Http\Controllers\ArticleController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*
+| routes before lesson 17
 
 Route::get('about', [PageController::class, 'about']);
 
@@ -41,3 +40,10 @@ Route::patch('articles/{id}', [ArticleController::class, 'update'])
 
 Route::delete('articles/{id}', [ArticleController::class, 'destroy'])
 ->name('articles.destroy');
+*/
+
+Route::get('/', function () {
+  return view('welcome');
+});
+
+Route::resource('articles', ArticleController::class);
